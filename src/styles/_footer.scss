@@ -1,0 +1,116 @@
+.footer{
+    user-select: none;
+    background-color: #212429;
+    color: #fff;
+    position: relative;
+    &__info{
+        height: 30px;
+        margin-top: 30px;
+        background-color: #1a1c20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.315);
+        & a{
+            transition: .3s;
+            &:hover{
+                transform: scale(1.3);
+                color: #fff;
+            }
+        }
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+        &--box{
+            min-height: 250px;
+            &-header{
+                text-transform: uppercase;
+                color: #fff;
+                letter-spacing: 2px;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            &-description{
+                line-height: 22px;
+                color: rgba(255, 255, 255, 0.747);
+                font-size: 16px;
+            }
+            &-image{
+                margin-top: 20px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(https://images.iphonephotographyschool.com/10819/1120/iPhone-Photos-Black-And-White-12.jpg);
+                height: 55%;
+            }
+            &-post{
+                margin-top: 30px;
+                margin-left: 20px;
+                position: relative;
+                & a{
+                    display: block;
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 5px;
+                }
+                & i{
+                    position: absolute;
+                    right: 100%;
+                    top: 0;
+                    margin:2px;
+                }
+            }
+            &-gallery{
+                display: grid;
+                height: 80%;
+                grid-gap: 10px;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                & div{
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: url(https://i1.sndcdn.com/artworks-000285264287-djznee-t500x500.jpg);
+                }
+            }
+            &-comment{
+                position: relative;
+                margin-left:15px;
+                & p{
+                    line-height: 22px;
+                    color: rgba(255, 255, 255, 0.747);
+                    font-size: 16px;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        margin-top: 10px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: rgb(56, 56, 56);
+                    }
+                }
+                & i{
+                    font-size: 10px;
+                    position: absolute;
+                    right: 100%;
+                    top: 0;
+                    margin:2px;
+                }
+                & h3{
+                    display: block;
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 5px;
+                    &::after{
+                        content: " :";
+                    }
+                }
+            }
+        }
+    }
+}

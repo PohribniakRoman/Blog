@@ -1,0 +1,313 @@
+.main {
+    padding-top: 30px;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        align-items: flex-end;
+        &--collectors {
+            width: 100% !important;
+            margin-top: 20px;
+            background-color: #fff;
+            &-header {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 20px;
+            }
+            &-item {
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                font-size: 12px;
+                justify-content: space-between;
+                margin: 10px;
+                padding: 5px;
+                color: rgb(36, 36, 36);
+                border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+            }
+            & div {
+                height: 40vh;
+                max-height: 700px;
+                min-height: 500px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(https://1.cms.s81c.com/sites/default/files/2020-12-02/IBM_Sterling_inventory_control_tower_mobile_lead_1000x500.jpg);
+                position: relative;
+                & i {
+                    position: absolute;
+                    top: 10%;
+                    right: 20%;
+                    left: 20%;
+                    height: 30%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url(https://www.nicepng.com/png/full/1-18848_adidas-svg-badge-adidas-logo-black-and-white.png);
+                }
+                & h3 {
+                    position: absolute;
+                    bottom: 10%;
+                    right: 10%;
+                    left: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-weight: bold;
+                    & b {
+                        margin: 0 10px;
+                        font-weight: bold;
+                        border: 3px solid #fff;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        font-size: 30px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    & span {
+                        text-transform: uppercase;
+                        line-height: 20px;
+                        font-size: 16px;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    top: 0;
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                }
+            }
+        }
+        & form {
+            display: flex;
+            width: 100%;
+            & button {
+                background-color: #26292e;
+                border: none;
+                padding: 10px;
+                color: #fff;
+                cursor: pointer;
+            }
+            & input {
+                width: 90%;
+                padding: 10px;
+                border: none;
+                outline: none;
+            }
+            ::placeholder {
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__post {
+        width: 70%;
+        margin:0 auto;
+        text-align: center;
+        &--gallery {
+            margin-bottom: 50px;
+            display: grid;
+            grid-gap: 0.1vw;
+            grid-template-columns: repeat(3, 33%);
+            justify-content: center;
+            position: relative;
+            & i {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgba(255, 255, 255, 0.74);
+                background-color: rgb(77, 77, 77);
+                padding: 5px;
+                font-size: 30px;
+                border-radius: 5px;
+            }
+            &-item:nth-child(3) {
+                & div {
+                    background-image: url(https://i.pinimg.com/originals/87/62/a0/8762a06be08f87f5f2fb29d688dfa941.jpg);
+                }
+            }
+            &-item:nth-child(2) {
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/46-101-1483_Lviv_Opera_SAM_7712_Panorama.jpg/528px-46-101-1483_Lviv_Opera_SAM_7712_Panorama.jpg);
+            }
+            &-item:nth-child(1) {
+                & div {
+                    background-image: url(https://i2.wp.com/www.golivegotravel.nl/wp-content/uploads/2020/05/Virmenska-Lviv.jpeg?fit=2048%2C1365&ssl=1);
+                }
+            }
+            &-item {
+                max-height: 800px;
+                height: 70vh;
+                min-height: 600px;
+                grid-gap: 0.1vw;
+                display: grid;
+                background-size: cover;
+                background-position: center;
+                background-repeat: none;
+                & div {
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: none;
+                }
+                & {
+                    grid-template-rows: 1fr 1fr;
+                }
+            }
+        }
+        &--img {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://learn.uvm.edu/nb_wordpress/wp-content/uploads/MPH-crowded-streets-1.jpg);
+            position: relative;
+            margin-bottom: 60px;
+            &::after {
+                content: "Lviv";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 300px;
+                color: #fff;
+                z-index: 0;
+                font-weight: bold;
+                font-family: "Montserrat", sans-serif;
+                letter-spacing: 5px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba($color: #000000, $alpha: 0.3);
+            }
+            & i {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgba(255, 255, 255, 0.74);
+                background-color: rgb(77, 77, 77);
+                padding: 5px;
+                font-size: 30px;
+                border-radius: 5px;
+            }
+        }
+        &--subtitle {
+            text-transform: uppercase;
+            color: rgb(143, 142, 142);
+        }
+        &--title {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 20px;
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+        }
+        &--links {
+            margin: 0 auto;
+            width: 50%;
+            color: rgb(143, 143, 143);
+            & a {
+                margin: 0 20px;
+            }
+            & i {
+                color: #000;
+                font-size: 15px;
+                margin: 0 10px;
+                margin-bottom: 30px;
+            }
+        }
+        &--description {
+            line-height: 30px;
+            margin: 0 auto;
+            text-overflow: ellipsis;
+            max-height: 90px;
+            overflow: hidden;
+            transition: 1s;
+        }
+        & button {
+            margin-top: 30px;
+            position: relative;
+            outline: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            & i {
+                transition: 0.3s;
+                display: flex;
+                border: 1px solid #26292e;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 15px 50px;
+                height: 100%;
+                position: absolute;
+                white-space: nowrap;
+                &:hover {
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                }
+            }
+        }
+        & hr {
+            margin-top: 60px;
+        }
+        &--share {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-controls {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & a {
+                    margin: 0 10px;
+                    & i {
+                        margin: 5px;
+                    }
+                }
+            }
+            &-item {
+                color: #26292e;
+                display: flex;
+                & i {
+                    cursor: pointer;
+                    transition: 0.1s;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0 5px;
+                    &::before {
+                        padding: 5px;
+                        z-index: 0;
+                    }
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+}
